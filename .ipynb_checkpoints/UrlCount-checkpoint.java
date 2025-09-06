@@ -14,12 +14,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class UrlCount {
 
-  /** Regex notes:
-   *  - (?i) makes "href" case-insensitive.
-   *  - Allows optional whitespace around '='.
-   *  - Captures content between double quotes (common in Wikipedia HTML dumps).
-   *  If your inputs sometimes use single quotes, see the comment below.
-   */
   private static final Pattern HREF_PATTERN =
       Pattern.compile("(?i)href\\s*=\\s*\"([^\"]*)\"");
 
@@ -41,13 +35,9 @@ public class UrlCount {
         }
       }
 
-      // If you must also handle single quotes, you could either:
-      //  (a) run a second matcher with pattern (?i)href\\s*=\\s*'([^']*)'
-      //  (b) or use a combined alternation and pick the non-null group.
     }
   }
 
-  /** Combiner to sum partial counts per mapper; safe because sum is assoc/commutative. */
   public static class IntSumCombiner
       extends Reducer<Text, IntWritable, Text, IntWritable> {
     private final IntWritable result = new IntWritable();
@@ -62,7 +52,6 @@ public class UrlCount {
     }
   }
 
-  /** Reducer: sum and filter to only output totals > 5. */
   public static class IntSumReducer
       extends Reducer<Text, IntWritable, Text, IntWritable> {
     private final IntWritable result = new IntWritable();

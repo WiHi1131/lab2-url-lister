@@ -1,0 +1,101 @@
+wihi1131@example-cluster-m:~/lab2-url-lister$ hdfs dfs -rm -r -f output
+time -p hadoop jar WordCount1.jar WordCount1 input output
+hdfs dfs -cat output/part* | head
+Deleted output
+2025-09-05 23:46:13,349 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at example-cluster-m.c.singular-apogee-470522-i8.internal./10.180.0.4:8032
+2025-09-05 23:46:13,469 INFO client.AHSProxy: Connecting to Application History server at example-cluster-m.c.singular-apogee-470522-i8.internal./10.180.0.4:10200
+2025-09-05 23:46:13,616 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2025-09-05 23:46:13,633 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/wihi1131/.staging/job_1757111998725_0004
+2025-09-05 23:46:13,891 INFO input.FileInputFormat: Total input files to process : 2
+2025-09-05 23:46:13,969 INFO mapreduce.JobSubmitter: number of splits:2
+2025-09-05 23:46:14,171 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1757111998725_0004
+2025-09-05 23:46:14,171 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2025-09-05 23:46:14,332 INFO conf.Configuration: resource-types.xml not found
+2025-09-05 23:46:14,333 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2025-09-05 23:46:14,388 INFO impl.YarnClientImpl: Submitted application application_1757111998725_0004
+2025-09-05 23:46:14,422 INFO mapreduce.Job: The url to track the job: http://example-cluster-m.c.singular-apogee-470522-i8.internal.:8088/proxy/application_1757111998725_0004/
+2025-09-05 23:46:14,423 INFO mapreduce.Job: Running job: job_1757111998725_0004
+2025-09-05 23:46:21,553 INFO mapreduce.Job: Job job_1757111998725_0004 running in uber mode : false
+2025-09-05 23:46:21,554 INFO mapreduce.Job:  map 0% reduce 0%
+2025-09-05 23:46:29,631 INFO mapreduce.Job:  map 100% reduce 0%
+2025-09-05 23:46:35,666 INFO mapreduce.Job:  map 100% reduce 14%
+2025-09-05 23:46:39,691 INFO mapreduce.Job:  map 100% reduce 43%
+2025-09-05 23:46:40,697 INFO mapreduce.Job:  map 100% reduce 71%
+2025-09-05 23:46:46,729 INFO mapreduce.Job:  map 100% reduce 86%
+2025-09-05 23:46:47,734 INFO mapreduce.Job:  map 100% reduce 100%
+2025-09-05 23:46:47,746 INFO mapreduce.Job: Job job_1757111998725_0004 completed successfully
+2025-09-05 23:46:47,816 INFO mapreduce.Job: Counters: 55
+        File System Counters
+                FILE: Number of bytes read=447707
+                FILE: Number of bytes written=3480123
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=578696
+                HDFS: Number of bytes written=7666
+                HDFS: Number of read operations=41
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=21
+                HDFS: Number of bytes read erasure-coded=0
+        Job Counters 
+                Killed reduce tasks=1
+                Launched map tasks=2
+                Launched reduce tasks=7
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=36819364
+                Total time spent by all reduces in occupied slots (ms)=211899266
+                Total time spent by all map tasks (ms)=10874
+                Total time spent by all reduce tasks (ms)=62581
+                Total vcore-milliseconds taken by all map tasks=10874
+                Total vcore-milliseconds taken by all reduce tasks=62581
+                Total megabyte-milliseconds taken by all map tasks=36819364
+                Total megabyte-milliseconds taken by all reduce tasks=211899266
+        Map-Reduce Framework
+                Map input records=4236
+                Map output records=31977
+                Map output bytes=701750
+                Map output materialized bytes=447749
+                Input split bytes=232
+                Combine input records=31977
+                Combine output records=13748
+                Reduce input groups=11519
+                Reduce shuffle bytes=447749
+                Reduce input records=13748
+                Reduce output records=512
+                Spilled Records=27496
+                Shuffled Maps =14
+                Failed Shuffles=0
+                Merged Map outputs=14
+                GC time elapsed (ms)=346
+                CPU time spent (ms)=13230
+                Physical memory (bytes) snapshot=3924512768
+                Virtual memory (bytes) snapshot=43406974976
+                Total committed heap usage (bytes)=3325034496
+                Peak Map Physical memory (bytes)=593657856
+                Peak Map Virtual memory (bytes)=4822212608
+                Peak Reduce Physical memory (bytes)=409100288
+                Peak Reduce Virtual memory (bytes)=4831539200
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=578464
+        File Output Format Counters 
+                Bytes Written=7666
+real 37.29
+user 8.70
+sys 0.49
+#202122);"      33
+(identifier)">ISBN</a>&#160;<a  18
+(programming    13
+.navbox-subgroup        6
+0.25em">        91
+23      6
+</li>   168
+</nav>  24
+</p><p>In       11
+</p><p>The      13
